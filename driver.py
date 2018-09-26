@@ -36,7 +36,6 @@ print_tree(t)
 acc = computeAccuracy(test, t)
 print("Accuracy on test = " + str(acc))
 
-## TODO: You have to decide on a pruning strategy
 
 # list containing all the Inner node IDs
 print("innerNodeID "+str(innerNodeID))
