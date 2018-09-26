@@ -1,0 +1,509 @@
+Dataset: Breast Cancer Dataset
+url: http://mlr.cs.umass.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data
+Attributes: ['Sample code number','Clump Thickness','Uniformity of Cell Size', 'Uniformity of Cell Shape','Marginal Adhesion', 'Single Epithelial Cell Size','Bare Nuclei','Bland Chromatin','Normal Nucleoli','Mitoses','Class']
+
+******************OUTPUT*********************
+
+Node ID: 0
+Node Depth: 0
+Is Uniformity of Cell Size >= 3?
+--> True:
+  Node ID: 2
+  Node Depth: 1
+  Is Uniformity of Cell Shape >= 3?
+  --> True:
+    Node ID: 6
+    Node Depth: 2
+    Is Uniformity of Cell Size >= 5?
+    --> True:
+      Node ID: 14
+      Node Depth: 3
+      Is Bare Nuclei == ??
+      --> True:
+        Node ID: 30
+        Node Depth: 4
+        Is Normal Nucleoli >= 10?
+        --> True:
+          Predict {4: 1}
+        --> False:
+          Predict {2: 2}
+      --> False:
+        Node ID: 29
+        Node Depth: 4
+        Is Marginal Adhesion >= 2?
+        --> True:
+          Node ID: 60
+          Node Depth: 5
+          Is Bare Nuclei == 8?
+          --> True:
+            Node ID: 122
+            Node Depth: 6
+            Is Sample code number >= 1293439?
+            --> True:
+              Node ID: 246
+              Node Depth: 7
+              Is Normal Nucleoli >= 4?
+              --> True:
+                Predict {4: 1}
+              --> False:
+                Predict {2: 1}
+            --> False:
+              Predict {4: 12}
+          --> False:
+            Predict {4: 149}
+        --> False:
+          Node ID: 59
+          Node Depth: 5
+          Is Sample code number >= 1108370?
+          --> True:
+            Predict {4: 9}
+          --> False:
+            Predict {2: 2}
+    --> False:
+      Node ID: 13
+      Node Depth: 3
+      Is Bare Nuclei == 1?
+      --> True:
+        Node ID: 28
+        Node Depth: 4
+        Is Marginal Adhesion >= 4?
+        --> True:
+          Predict {4: 3}
+        --> False:
+          Predict {2: 8}
+      --> False:
+        Node ID: 27
+        Node Depth: 4
+        Is Clump Thickness >= 7?
+        --> True:
+          Node ID: 56
+          Node Depth: 5
+          Is Bare Nuclei == 2?
+          --> True:
+            Predict {2: 1}
+          --> False:
+            Node ID: 113
+            Node Depth: 6
+            Is Bare Nuclei == 7?
+            --> True:
+              Node ID: 228
+              Node Depth: 7
+              Is Normal Nucleoli >= 8?
+              --> True:
+                Predict {2: 1}
+              --> False:
+                Predict {4: 2}
+            --> False:
+              Predict {4: 29}
+        --> False:
+          Node ID: 55
+          Node Depth: 5
+          Is Sample code number >= 1108449?
+          --> True:
+            Predict {4: 10}
+          --> False:
+            Node ID: 111
+            Node Depth: 6
+            Is Marginal Adhesion >= 6?
+            --> True:
+              Predict {4: 4}
+            --> False:
+              Node ID: 223
+              Node Depth: 7
+              Is Uniformity of Cell Size >= 4?
+              --> True:
+                Predict {2: 5}
+              --> False:
+                Node ID: 447
+                Node Depth: 8
+                Is Marginal Adhesion >= 3?
+                --> True:
+                  Node ID: 896
+                  Node Depth: 9
+                  Is Bare Nuclei == 3?
+                  --> True:
+                    Predict {4: 1}
+                  --> False:
+                    Predict {2: 3}
+                --> False:
+                  Predict {4: 3}
+  --> False:
+    Node ID: 5
+    Node Depth: 2
+    Is Clump Thickness >= 6?
+    --> True:
+      Predict {4: 4}
+    --> False:
+      Node ID: 11
+      Node Depth: 3
+      Is Bland Chromatin >= 8?
+      --> True:
+        Predict {4: 1}
+      --> False:
+        Predict {2: 18}
+--> False:
+  Node ID: 1
+  Node Depth: 1
+  Is Normal Nucleoli >= 4?
+  --> True:
+    Node ID: 4
+    Node Depth: 2
+    Is Bare Nuclei == 1?
+    --> True:
+      Node ID: 10
+      Node Depth: 3
+      Is Mitoses >= 4?
+      --> True:
+        Predict {4: 1}
+      --> False:
+        Predict {2: 2}
+    --> False:
+      Predict {4: 6}
+  --> False:
+    Node ID: 3
+    Node Depth: 2
+    Is Clump Thickness >= 7?
+    --> True:
+      Node ID: 8
+      Node Depth: 3
+      Is Bare Nuclei == 1?
+      --> True:
+        Predict {2: 2}
+      --> False:
+        Predict {4: 3}
+    --> False:
+      Node ID: 7
+      Node Depth: 3
+      Is Bare Nuclei == 10?
+      --> True:
+        Node ID: 16
+        Node Depth: 4
+        Is Bland Chromatin >= 5?
+        --> True:
+          Predict {4: 1}
+        --> False:
+          Predict {2: 1}
+      --> False:
+        Node ID: 15
+        Node Depth: 4
+        Is Bare Nuclei == 5?
+        --> True:
+          Node ID: 32
+          Node Depth: 5
+          Is Single Epithelial Cell Size >= 2?
+          --> True:
+            Predict {2: 7}
+          --> False:
+            Predict {4: 1}
+        --> False:
+          Predict {2: 405}
+********** Leaf nodes ****************
+id = 62 depth =5
+id = 61 depth =5
+id = 494 depth =8
+id = 493 depth =8
+id = 245 depth =7
+id = 121 depth =6
+id = 120 depth =6
+id = 119 depth =6
+id = 58 depth =5
+id = 57 depth =5
+id = 114 depth =6
+id = 458 depth =8
+id = 457 depth =8
+id = 227 depth =7
+id = 112 depth =6
+id = 224 depth =7
+id = 448 depth =8
+id = 1794 depth =10
+id = 1793 depth =10
+id = 895 depth =9
+id = 12 depth =3
+id = 24 depth =4
+id = 23 depth =4
+id = 22 depth =4
+id = 21 depth =4
+id = 9 depth =3
+id = 18 depth =4
+id = 17 depth =4
+id = 34 depth =5
+id = 33 depth =5
+id = 66 depth =6
+id = 65 depth =6
+id = 31 depth =5
+********** Non-leaf nodes ****************
+id = 0 depth =0
+id = 2 depth =1
+id = 6 depth =2
+id = 14 depth =3
+id = 30 depth =4
+id = 29 depth =4
+id = 60 depth =5
+id = 122 depth =6
+id = 246 depth =7
+id = 59 depth =5
+id = 13 depth =3
+id = 28 depth =4
+id = 27 depth =4
+id = 56 depth =5
+id = 113 depth =6
+id = 228 depth =7
+id = 55 depth =5
+id = 111 depth =6
+id = 223 depth =7
+id = 447 depth =8
+id = 896 depth =9
+id = 5 depth =2
+id = 11 depth =3
+id = 1 depth =1
+id = 4 depth =2
+id = 10 depth =3
+id = 3 depth =2
+id = 8 depth =3
+id = 7 depth =3
+id = 16 depth =4
+id = 15 depth =4
+id = 32 depth =5
+*************Tree before pruning*******
+Node ID: 0
+Node Depth: 0
+Is Uniformity of Cell Size >= 3?
+--> True:
+  Node ID: 2
+  Node Depth: 1
+  Is Uniformity of Cell Shape >= 3?
+  --> True:
+    Node ID: 6
+    Node Depth: 2
+    Is Uniformity of Cell Size >= 5?
+    --> True:
+      Node ID: 14
+      Node Depth: 3
+      Is Bare Nuclei == ??
+      --> True:
+        Node ID: 30
+        Node Depth: 4
+        Is Normal Nucleoli >= 10?
+        --> True:
+          Predict {4: 1}
+        --> False:
+          Predict {2: 1}
+      --> False:
+        Node ID: 29
+        Node Depth: 4
+        Is Marginal Adhesion >= 2?
+        --> True:
+          Node ID: 60
+          Node Depth: 5
+          Is Bare Nuclei == 8?
+          --> True:
+            Node ID: 122
+            Node Depth: 6
+            Is Bland Chromatin >= 7?
+            --> True:
+              Predict {4: 9}
+            --> False:
+              Predict {2: 1}
+          --> False:
+            Predict {4: 116}
+        --> False:
+          Node ID: 59
+          Node Depth: 5
+          Is Clump Thickness >= 8?
+          --> True:
+            Predict {4: 5}
+          --> False:
+            Predict {2: 2}
+    --> False:
+      Node ID: 13
+      Node Depth: 3
+      Is Bare Nuclei == 1?
+      --> True:
+        Node ID: 28
+        Node Depth: 4
+        Is Marginal Adhesion >= 4?
+        --> True:
+          Predict {4: 2}
+        --> False:
+          Predict {2: 7}
+      --> False:
+        Node ID: 27
+        Node Depth: 4
+        Is Bare Nuclei == 2?
+        --> True:
+          Node ID: 56
+          Node Depth: 5
+          Is Normal Nucleoli >= 9?
+          --> True:
+            Predict {4: 1}
+          --> False:
+            Predict {2: 2}
+        --> False:
+          Node ID: 55
+          Node Depth: 5
+          Is Bare Nuclei == ??
+          --> True:
+            Predict {2: 1}
+          --> False:
+            Node ID: 111
+            Node Depth: 6
+            Is Single Epithelial Cell Size >= 7?
+            --> True:
+              Node ID: 224
+              Node Depth: 7
+              Is Single Epithelial Cell Size >= 8?
+              --> True:
+                Predict {4: 4}
+              --> False:
+                Predict {2: 2}
+            --> False:
+              Node ID: 223
+              Node Depth: 7
+              Is Normal Nucleoli >= 7?
+              --> True:
+                Node ID: 448
+                Node Depth: 8
+                Is Uniformity of Cell Shape >= 5?
+                --> True:
+                  Predict {4: 4}
+                --> False:
+                  Predict {2: 2}
+              --> False:
+                Node ID: 447
+                Node Depth: 8
+                Is Mitoses >= 3?
+                --> True:
+                  Node ID: 896
+                  Node Depth: 9
+                  Is Clump Thickness >= 7?
+                  --> True:
+                    Predict {4: 4}
+                  --> False:
+                    Predict {2: 1}
+                --> False:
+                  Predict {4: 27}
+  --> False:
+    Node ID: 5
+    Node Depth: 2
+    Is Bland Chromatin >= 4?
+    --> True:
+      Predict {4: 2}
+    --> False:
+      Predict {2: 12}
+--> False:
+  Node ID: 1
+  Node Depth: 1
+  Is Clump Thickness >= 7?
+  --> True:
+    Predict {4: 6}
+  --> False:
+    Node ID: 3
+    Node Depth: 2
+    Is Normal Nucleoli >= 6?
+    --> True:
+      Node ID: 8
+      Node Depth: 3
+      Is Bare Nuclei == 1?
+      --> True:
+        Predict {2: 1}
+      --> False:
+        Predict {4: 3}
+    --> False:
+      Node ID: 7
+      Node Depth: 3
+      Is Bare Nuclei == 10?
+      --> True:
+        Node ID: 16
+        Node Depth: 4
+        Is Bland Chromatin >= 5?
+        --> True:
+          Predict {4: 1}
+        --> False:
+          Predict {2: 1}
+      --> False:
+        Node ID: 15
+        Node Depth: 4
+        Is Bare Nuclei == 5?
+        --> True:
+          Node ID: 32
+          Node Depth: 5
+          Is Single Epithelial Cell Size >= 2?
+          --> True:
+            Predict {2: 5}
+          --> False:
+            Predict {4: 1}
+        --> False:
+          Predict {2: 335}
+Accuracy on test = 0.91
+innerNodeID [0, 2, 6, 14, 30, 29, 60, 122, 246, 59, 13, 28, 27, 56, 113, 228, 55, 111, 223, 447, 896, 5, 11, 1, 4, 10, 3, 8, 7, 16, 15, 32]
+random_samples [246, 60, 13, 14, 896]
+*************Tree after pruning*******
+Node ID: 0
+Node Depth: 0
+Is Uniformity of Cell Size >= 3?
+--> True:
+  Node ID: 2
+  Node Depth: 1
+  Is Uniformity of Cell Shape >= 3?
+  --> True:
+    Node ID: 6
+    Node Depth: 2
+    Is Uniformity of Cell Size >= 5?
+    --> True:
+      Predict {4: 131, 2: 4}
+    --> False:
+      Predict {2: 15, 4: 42}
+  --> False:
+    Node ID: 5
+    Node Depth: 2
+    Is Bland Chromatin >= 4?
+    --> True:
+      Predict {4: 2}
+    --> False:
+      Predict {2: 12}
+--> False:
+  Node ID: 1
+  Node Depth: 1
+  Is Clump Thickness >= 7?
+  --> True:
+    Predict {4: 6}
+  --> False:
+    Node ID: 3
+    Node Depth: 2
+    Is Normal Nucleoli >= 6?
+    --> True:
+      Node ID: 8
+      Node Depth: 3
+      Is Bare Nuclei == 1?
+      --> True:
+        Predict {2: 1}
+      --> False:
+        Predict {4: 3}
+    --> False:
+      Node ID: 7
+      Node Depth: 3
+      Is Bare Nuclei == 10?
+      --> True:
+        Node ID: 16
+        Node Depth: 4
+        Is Bland Chromatin >= 5?
+        --> True:
+          Predict {4: 1}
+        --> False:
+          Predict {2: 1}
+      --> False:
+        Node ID: 15
+        Node Depth: 4
+        Is Bare Nuclei == 5?
+        --> True:
+          Node ID: 32
+          Node Depth: 5
+          Is Single Epithelial Cell Size >= 2?
+          --> True:
+            Predict {2: 5}
+          --> False:
+            Predict {4: 1}
+        --> False:
+          Predict {2: 335}
+Accuracy on test = 0.97
+[Finished in 3.3s]
